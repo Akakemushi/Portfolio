@@ -4,19 +4,42 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/bundle.css">
-    <style>
-      @import url('https://fonts.googleapis.com/css2?family=Sarabun:ital,wght@0,400;0,500;0,800;1,400;1,500;1,800&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
-    </style>
-    <title>Giraffe</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <title></title>
   </head>
   <body>
     <div class="centered-block">
   <h1>Jason Sturgeon</h1>
   <h2>Web Dev</h2>
 </div>
-<h3>Giraffe</h3>
-<p>Ipso facto meeny mo magico!</p>
+<h2>Projects</h2>
+<div class="project-card">
+  <div class="project-card__header">
+    <h3>Story Time</h3>
+  </div>
+  <div class="project-card__body">
+    <picture><source type="image/webp" srcset="/.11ty/image/?src=images%2Fgalaxies.png&width=1024&format=webp&via=transform 1024w"><img src="/.11ty/image/?src=images%2Fgalaxies.png&width=1024&format=jpeg&via=transform" alt="A picture of a galaxy" width="1024" height="1024"></picture>
+    <div class="project-card__body__text">
+      <p>Improve your English vocabulary through fun stories told by an AI storyteller!</p>
+      <p class="details">This was the final project of my team while I was studying web development at Le Wagon, Tokyo.  My role was mostly back-end development, using Ruby on Rails, Redis, Sidekiq, PostgreSQL, Cloudinary, and OpenAI&#39;s ChatGPT and Dall-E-3 APIs. On front-end, I designed and implemented the story-creation interface and the loading page animation. One of my biggest achievements for this project was being able to substantially cut API-call wait times between story pages by using background jobs to generate subsequent story text and images. Thanks so much to my team members Alex Voler, who came up with the app idea, and Glenn Torrens for their hard work on this project.</p>
+    </div>
+  </div>
+</div>
+<div class="project-card">
+  <div class="project-card__header">
+    <h3>HSU Quiz Site</h3>
+  </div>
+  <div class="project-card__body">
+    <picture><source type="image/webp" srcset="/.11ty/image/?src=images%2Fgalaxies.png&width=1024&format=webp&via=transform 1024w"><img src="/.11ty/image/?src=images%2Fgalaxies.png&width=1024&format=jpeg&via=transform" alt="A picture of a galaxy" width="1024" height="1024"></picture>
+    <div class="project-card__body__text">
+      <p>Prepare for your next English quiz!</p>
+      <p class="details">This was my first ever web app, which I developed all on my own through self-study and trial-and-error before ever setting foot inside of a coding classroom. It uses simple HTML, CSS and a bit of JavaScript for the front-end, and MySQL and PHP for the back-end. I learned so much about web dev from the project, and in the end it was successfully launched and hosted on iPage, where it is still up and running today. Myself and another teacher I work with manage the question bank through a UI, adding and deleting questions as needed of three types, multiple choice, spelling, and sentence scrambles. There is a cumulative score leaderboard just for fun, and plans to implement personalized statistics for each user. There is no git repository for it because, well, I didn&#39;t know such things existed at the time!</p>
+    </div>
+  </div>
+</div>
 
-    <h1>Giraffe</h1>
+    <h1></h1>
   </body>
 </html>

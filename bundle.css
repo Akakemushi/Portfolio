@@ -1,7 +1,71 @@
-.screen {
-  
+body {
+  background-color: rgb(23, 09, 03);
+  color: aquamarine;
+  margin-top: 50px;
+  margin-left: 20%;
+  margin-right: 20%;
+  line-height: 1.6em;
+  font-size: 20px;
+  font-family: Inter;
+}
+
+h1 {
+  font-weight: 900;
+}
+
+h2 {
+  font-weight: 700;
+}
+
+.project-card {
+  border-radius: 15px;
+  background-color: rgb(14, 36, 42);
+  margin-bottom: 30px;
+}
+
+.project-card__header {
+  background-color: aquamarine;
+  color: rgb(23, 09, 03);
+  padding: 1%;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.project-card__header h3 {
+  margin: 0;
+}
+
+.project-card__body {
+  display: flex;
+  padding: 2% 5% 2% 5%;
+}
+
+.project-card__body img {
+  min-width: 200px;
+  min-height: 200px;
+  max-width: 90%;
+  height: auto;
+  margin-right: 15px;
+}
+
+.project-card__body__text {
+  line-height: 1.4em;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: space-between;
+  max-width: 60%;
+}
+
+.project-card__body__text p {
+  margin: 0;
+}
+
+.details {
+  font-weight: 200;
 }
 
 .centered-block {
   text-align: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }

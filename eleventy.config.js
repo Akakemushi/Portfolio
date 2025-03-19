@@ -1,6 +1,8 @@
+import { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
+
 export default function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("bundle.css");
-  eleventyConfig.addPassthroughCopy("font.woff2");
+  eleventyConfig.addPlugin(eleventyImageTransformPlugin);
 };
 
 // const eleventyGoogleFonts = require("eleventy-google-fonts");
