@@ -1,9 +1,7 @@
-h1 {
-  color: red;
-  font-family: Sour Gummy;
+.screen {
+  
 }
 
-h2 {
-  color: blue;
-  font-family: Sour Gummy;
+.centered-block {
+  text-align: center;
 }
