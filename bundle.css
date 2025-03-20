@@ -1,11 +1,11 @@
 body {
-  background-color: rgb(23, 09, 03);
-  color: aquamarine;
+  background-color: #230903;
+  color: #f4f2f3;
   margin-top: 50px;
   margin-left: 20%;
   margin-right: 20%;
   line-height: 1.6em;
-  font-size: 20px;
+  font-size: 24px;
   font-family: Inter;
 }
 
@@ -58,10 +58,14 @@ h2 {
 
 .project-card__body__text p {
   margin: 0;
+  font-weight: 500;
+  /* font-size: 18pt; */
 }
 
 .details {
   font-weight: 200;
+  font-size: 16px;
+  line-height: 1.4em;
 }
 
 .centered-block {
