@@ -1,0 +1,1 @@
+When launching the Eleventy server, remember to use     npx @11ty/eleventy --serve       and not simply "serve".  the "serve" command will give you Ruby.
