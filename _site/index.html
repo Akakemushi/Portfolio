@@ -11,7 +11,7 @@
   </head>
   <body>
     <div class="centered-block">
-  <h1>Hi.<span class="inline-gap"></span> I'm Jason Sturgeon.</h1>
+  <h1>Hi.<span class="inline-gap"></span> I'm <span class="colorful-text">Jason Sturgeon</span>.</h1>
   <h1>I make web apps.</h1>
 </div>
 
@@ -38,7 +38,7 @@
     <picture><source type="image/webp" srcset="/.11ty/image/?src=images%2FHSUQuiz.png&width=498&format=webp&via=transform 498w"><img src="/.11ty/image/?src=images%2FHSUQuiz.png&width=498&format=jpeg&via=transform" alt="A picture of the quiz site" width="498" height="498"></picture>
     <div class="project-card__body__text">
       <p>Prepare for your next English quiz!</p>
-      <p class="details">This was my first ever web app, which I developed all on my own through self-study and trial-and-error before ever setting foot inside of a coding classroom. It uses simple HTML, CSS and a bit of JavaScript for the front-end, and MySQL and PHP for the back-end. I learned so much about web dev from the project, and in the end it was successfully launched and hosted on iPage, where it is still up and running today. Myself and another teacher I work with manage the question bank through a UI, adding and deleting questions as needed of three types, multiple choice, spelling, and sentence scrambles. There is a cumulative score leaderboard just for fun, and plans to implement personalized statistics for each user. There is no git repository for it because, well, I didn&#39;t know such things existed at the time!</p>
+      <p class="details">This was my first ever web app (mobile first), which I developed all on my own through self-study and trial-and-error before ever setting foot inside of a coding classroom. It uses simple HTML, CSS and a bit of JavaScript for the front-end, and MySQL and PHP for the back-end. I learned so much about web dev from the project, and in the end it was successfully launched and hosted on iPage, where it is still up and running today. Myself and another teacher I work with manage the question bank through a UI, adding and deleting questions as needed of three types, multiple choice, spelling, and sentence scrambles. There is a cumulative score leaderboard just for fun, and plans to implement personalized statistics for each user. There is no git repository for it because, well, I didn&#39;t know such things existed at the time!</p>
     </div>
   </div>
 </div>
@@ -50,7 +50,7 @@
   <div class="project-card__body">
     <picture><source type="image/webp" srcset="/.11ty/image/?src=images%2FTrueself.png&width=690&format=webp&via=transform 690w"><img src="/.11ty/image/?src=images%2FTrueself.png&width=690&format=jpeg&via=transform" alt="A picture of a journal" width="690" height="690"></picture>
     <div class="project-card__body__text">
-      <p>Shopify site selling high-quality journals and pens.</p>
+      <p>A client&#39;s Shopify site selling high-quality journals and pens.</p>
       <p class="details">A client came to me needing help with CSS and template management for a shopify site that they had built.  The problem the client faced was that the code for the site had become unweildy due to the CSS structure and repeated code used.  I helped the client by refactoring their CSS code for reusability and creating templates for ease of future product releases.</p>
     </div>
   </div>
@@ -71,10 +71,10 @@
 
 <div class="project-card">
   <div class="project-card__header">
-    <a href="https://github.com/Akakemushi/shinkouen"><h3>Le Wagon Race</h3></a>
+    <a href="https://lewagonrace.netlify.app/"><h3>Le Wagon Race</h3></a>
   </div>
   <div class="project-card__body">
-    <picture><source type="image/webp" srcset="/.11ty/image/?src=images%2Fteapot24.jpg&width=445&format=webp&via=transform 445w"><img src="/.11ty/image/?src=images%2Fteapot24.jpg&width=445&format=jpeg&via=transform" alt="A picture of a teapot" width="445" height="445"></picture>
+    <picture><source type="image/webp" srcset="/.11ty/image/?src=images%2Fwagon_race.png&width=525&format=webp&via=transform 525w"><img src="/.11ty/image/?src=images%2Fwagon_race.png&width=525&format=jpeg&via=transform" alt="A picture of a teapot" width="525" height="525"></picture>
     <div class="project-card__body__text">
       <p>A fun little time-waster to showcase some of my CSS and JavaScript skills.</p>
       <p class="details">This game was initially created as part of a lesson during my time at the Le Wagon bootcamp, now I&#39;m improving and expanding upon it just for fun. So far I have added a cool parallax-effect jungle background, and I plan to make the &#39;race&#39; aspect of the game feel more fluid through JavaScript next.</p>
@@ -84,17 +84,24 @@
 
 <div class="project-card">
   <div class="project-card__header">
-    <a href="https://github.com/Akakemushi/shinkouen"><h3>Kellogg's Cypher</h3></a>
+    <a href="https://alsaciuscipher.netlify.app/"><h3>Alsacius's Cipher</h3></a>
   </div>
   <div class="project-card__body">
-    <picture><source type="image/webp" srcset="/.11ty/image/?src=images%2Fteapot24.jpg&width=445&format=webp&via=transform 445w"><img src="/.11ty/image/?src=images%2Fteapot24.jpg&width=445&format=jpeg&via=transform" alt="A picture of a teapot" width="445" height="445"></picture>
+    <picture><source type="image/webp" srcset="/.11ty/image/?src=images%2FAlsacius-Cipher.png&width=735&format=webp&via=transform 735w"><img src="/.11ty/image/?src=images%2FAlsacius-Cipher.png&width=735&format=jpeg&via=transform" alt="A picture of part of the website" width="735" height="752"></picture>
     <div class="project-card__body__text">
-      <p>A &#39;secret-code&#39; type cypher for D&amp;D.</p>
-      <p class="details">This is a repository containing a Ruby file you can download and run locally.  It takes a string of any length, and puts it through a wide variety of different cyphers before outputing the encoded message.  It was designed to be a puzzle for the players in my D&amp;D game, but feel free to use it for your own purposes or in your own game! Naturally there is a &quot;decipher&quot; function as well. I&#39;m considering converting it into a fully functional front-end app.</p>
+      <p>A &#39;secret-code&#39; type cipher for D&amp;D puzzles.</p>
+      <p class="details">This is a site that takes a message and outputs an encrypted version.  It takes a string of up to 10,000 characters, and puts it through a wide variety of different cyphers before outputing the encoded message.  It was designed to be a puzzle for the players in my D&amp;D game, but feel free to use it for your own purposes or in your own game! Naturally there is a &quot;decipher&quot; function as well. The cypher is designed to be difficult (but not impossible) for a human to break. This app is just for fun, so please do not use this for any REAL security purposes, lol.</p>
     </div>
   </div>
 </div>
 
-    <h1></h1>
-  </body>
-</html>
+    <div class="footer">
+      <a class="social-icon" href="mailto:zergyjanus@gmail.com"><picture><source type="image/webp" srcset="/.11ty/image/?src=images%2Femail-green.png&width=512&format=webp&via=transform 512w"><img src="/.11ty/image/?src=images%2Femail-green.png&width=512&format=jpeg&via=transform" alt="Link to Email" width="512" height="512"></picture></a>
+      <a class="social-icon" href="https://discordapp.com/users/Akakemushi#0969"><picture><source type="image/webp" srcset="/.11ty/image/?src=images%2Fdiscord-green.png&width=512&format=webp&via=transform 512w"><img src="/.11ty/image/?src=images%2Fdiscord-green.png&width=512&format=jpeg&via=transform" alt="Link to Discord" width="512" height="512"></picture></a>
+      <a class="social-icon" href="https://github.com/Akakemushi"><picture><source type="image/webp" srcset="/.11ty/image/?src=images%2Fgithub-green.png&width=512&format=webp&via=transform 512w"><img src="/.11ty/image/?src=images%2Fgithub-green.png&width=512&format=jpeg&via=transform" alt="Link to Github" width="512" height="512"></picture></a>
+      <a class="social-icon" href="https://www.instagram.com/jason.sturgeon.37"><picture><source type="image/webp" srcset="/.11ty/image/?src=images%2Finstagram-green.png&width=512&format=webp&via=transform 512w"><img src="/.11ty/image/?src=images%2Finstagram-green.png&width=512&format=jpeg&via=transform" alt="Link to Instagram" width="512" height="512"></picture></a>
+      <a class="social-icon" href="https://line.me/ti/p/noDa6KP5jw"><picture><source type="image/webp" srcset="/.11ty/image/?src=images%2Fline-green.png&width=512&format=webp&via=transform 512w"><img src="/.11ty/image/?src=images%2Fline-green.png&width=512&format=jpeg&via=transform" alt="Link to Line" width="512" height="512"></picture></a>
+      <a class="social-icon" href="https://www.linkedin.com/in/jason-sturgeon-web-dev"><picture><source type="image/webp" srcset="/.11ty/image/?src=images%2Flinkedin-green.png&width=512&format=webp&via=transform 512w"><img src="/.11ty/image/?src=images%2Flinkedin-green.png&width=512&format=jpeg&via=transform" alt="Link to LinkedIn" width="512" height="512"></picture></a>
+      <a class="social-icon" href="https://www.youtube.com/@akakemushi439"><picture><source type="image/webp" srcset="/.11ty/image/?src=images%2Fyoutube-green.png&width=512&format=webp&via=transform 512w"><img src="/.11ty/image/?src=images%2Fyoutube-green.png&width=512&format=jpeg&via=transform" alt="Link to YouTube" width="512" height="512"></picture></a>
+    </div>
+</body></html>
