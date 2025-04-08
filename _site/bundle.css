@@ -10,12 +10,17 @@ body {
   font-family: Inter;
 }
 
+.details-small {
+  display: none;
+}
+
 h1 {
   font-weight: 900;
 }
 
 h2 {
   font-weight: 700;
+  margin-top: 100px;
 }
 
 .project-card {
@@ -113,9 +118,219 @@ h2 {
   box-shadow: 0 0 0 0 rgb(95, 184, 152);
 }
 
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
 .colorful-text {
-  background: linear-gradient(to right, #e33089, #00f2fe, rgb(207, 93, 7));
+  background: linear-gradient(to right, #e33089, #00f2fe, rgb(207, 93, 7), #e33089);
+  background-size: 200%;
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
+  animation: shimmer 3s linear infinite;
+}
+
+.accordion {
+  display: none;
+}
+
+.accordion-header {
+  display: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  padding: 1rem;
+  background-color: #f0f0f0;
+}
+
+.accordion-content {
+  display: none;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, padding 0.4s ease;
+  padding: 0 1rem;
+}
+
+.accordion-content.open {
+  display: none;
+  max-height: 500px; /* big enough to fit full content */
+  padding: 1rem;
+}
+
+@media (max-width: 767px) {
+  /* For smart phones */
+  body {
+    background-color: #230903;
+    color: #f4f2f3;
+    margin-top: 40vh;
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-bottom: 10vh;
+    line-height: 1.6em;
+    font-size: 16px;
+    font-family: Inter;
+  }
+
+  .details-small {
+    display: block;
+    font-weight: 200;
+    font-size: 16px;
+    line-height: 1.4em;
+    margin: 0px;
+  }
+
+  h1 {
+    font-weight: 900;
+  }
+
+  h2 {
+    font-weight: 700;
+  }
+
+  .project-card {
+    border-radius: 5px;
+    background-color: rgb(14, 36, 42);
+    margin-bottom: 30px;
+  }
+
+  .project-card__header {
+    background-color: aquamarine;
+    color: rgb(23, 09, 03);
+    padding: 1%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+
+  .project-card__header h3 {
+    margin: 0;
+  }
+
+  .project-card__body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 2% 5% 2% 5%;
+  }
+
+  .project-card__body picture {
+    max-width: 50%;
+  }
+
+  .project-card__body img {
+    min-height: auto;
+    height: auto;
+    min-width: 100px;
+  }
+
+  .project-card__body__text {
+    line-height: 1.4em;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: space-between;
+    max-width: 50%;
+  }
+
+  .project-card__body__text p {
+    margin: 16px 0 0 0;
+    font-weight: 500;
+    /* font-size: 18pt; */
+  }
+
+  .details {
+    display: none;
+  }
+
+  .centered-block {
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  .inline-gap {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    width: 20px;
+  }
+
+  .footer {
+    display: flex;
+    justify-content: center;
+  }
+
+  .footer a {
+    height: 50px;
+    width: 50px;
+    margin: 10px;
+    border-radius: 50%;
+    transition-duration: 0.2s;
+    box-shadow: 0 0 0 0 rgb(95, 184, 152);
+  }
+
+  .footer a img {
+    width: 100%;
+    height: auto;
+  }
+
+  .footer a:hover {
+    transition-duration: 0.2s;
+    transform: translate(-3px, -3px);
+    box-shadow: 3px 3px 0 0 rgb(95, 184, 152);
+  }
+
+  .footer a:active {
+    transition-duration: 0.2s;
+    transform: translate(0, 0);
+    box-shadow: 0 0 0 0 rgb(95, 184, 152);
+  }
+
+  .colorful-text {
+    background: linear-gradient(to right, #e33089, #00f2fe, rgb(207, 93, 7));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  .accordion {
+    display: block;
+  }
+
+  .accordion-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0);
+    padding: 5px;
+  }
+
+  .caret-icon {
+    transition: transform 0.3s ease;
+  }
+
+  /* Rotate the caret when active */
+  .accordion-header.active .caret-icon {
+    transform: rotate(180deg);
+  }
+
+  .accordion-content {
+    display: block;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease, padding 0.4s ease;
+    padding: 0px;
+  }
+
+  .accordion-content.open {
+    display: block;
+    max-height: 500px;
+    padding: 0px;
+  }
 }
