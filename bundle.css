@@ -128,7 +128,7 @@ h2 {
 }
 
 .colorful-text {
-  background: linear-gradient(to right, #e33089, #00f2fe, rgb(207, 93, 7), #e33089);
+  background: linear-gradient(to right, #00f2fe, rgb(207, 93, 7), #00f2fe);
   background-size: 200%;
   -webkit-background-clip: text;
   background-clip: text;
@@ -292,7 +292,7 @@ h2 {
   }
 
   .colorful-text {
-    background: linear-gradient(to right, #e33089, #00f2fe, rgb(207, 93, 7));
+    background: linear-gradient(to right, #00f2fe, rgb(207, 93, 7), #00f2fe);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
