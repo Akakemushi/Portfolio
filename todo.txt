@@ -1,0 +1,5 @@
+- refine the about me sections, check for accuracy, get rid of em-dashes, lol.
+- rearrange the order of the Projects
+- add Over the Rainbow to Projects sections
+- copy social links to the top of the page as well
+- adjust the sizes of the Title to make them look better.
