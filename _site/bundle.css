@@ -1,7 +1,7 @@
 body {
   background-color: #230903;
   color: #f4f2f3;
-  margin-top: 40vh;
+  margin-top: 20vh;
   margin-left: 20%;
   margin-right: 20%;
   margin-bottom: 10vh;
@@ -136,6 +136,28 @@ h2 {
   animation: shimmer 3s linear infinite;
 }
 
+.hollow-text {
+  text-shadow: 2px 2px 0 #f4f2f3, -2px 2px 0 #f4f2f3, 2px -2px 0 #f4f2f3, -2px -2px 0 #f4f2f3;
+  color: #230903;
+}
+
+.intro-paragraph__block {
+  margin-top: 15px;
+  margin-bottom: 44px;
+}
+
+.intro-paragraph__block h2 {
+  color: aquamarine;
+  margin-bottom: 10px;
+  margin-top: 0px;
+}
+
+.intro-paragraph__block p {
+  text-align: justify;
+  line-height: 32px;
+  margin-top: 0px;
+}
+
 .accordion {
   display: none;
 }
@@ -250,7 +272,7 @@ h2 {
   .centered-block {
     text-align: center;
     margin-top: 15px;
-    margin-bottom: 15px;
+    margin-bottom: 80px;
   }
 
   .inline-gap {
@@ -292,7 +314,7 @@ h2 {
   }
 
   .colorful-text {
-    background: linear-gradient(to right, #00f2fe, rgb(207, 93, 7), #00f2fe);
+    background: linear-gradient(to right, #00f2fe, rgb(51, 206, 56), #00f2fe);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
