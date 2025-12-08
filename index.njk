@@ -1,9 +1,18 @@
 ---
 layout: mylayout.njk
 ---
-<div class="centered-block">
+<div class="page-title-block">
   <h1><span class="colorful-text">Jason Sturgeon</span></h1>
   <h1><span class="hollow-text">Web Development</span></h1>
+</div>
+<div class="footer" style="margin-bottom: 52px;">
+  <a class="social-icon" href="mailto:zergyjanus@gmail.com"><img src="./images/email-green.png" alt="Link to Email"></a>
+  <a class="social-icon" href="https://discordapp.com/users/Akakemushi#0969"><img src="./images/discord-green.png" alt="Link to Discord"></a>
+  <a class="social-icon" href="https://github.com/Akakemushi"><img src="./images/github-green.png" alt="Link to Github"></a>
+  <a class="social-icon" href="https://www.instagram.com/jason.sturgeon.37"><img src="./images/instagram-green.png" alt="Link to Instagram"></a>
+  <a class="social-icon" href="https://line.me/ti/p/noDa6KP5jw"><img src="./images/line-green.png" alt="Link to Line"></a>
+  <a class="social-icon" href="https://www.linkedin.com/in/jason-sturgeon-web-dev"><img src="./images/linkedin-green.png" alt="Link to LinkedIn"></a>
+  <a class="social-icon" href="https://www.youtube.com/@akakemushi439"><img src="./images/youtube-green.png" alt="Link to YouTube"></a>
 </div>
 
 <div class="intro-paragraph__block">
@@ -22,7 +31,7 @@ layout: mylayout.njk
   <p>Although my professional career began in English education, I’ve been coding in some form since high school.
     Over the past five years, I’ve dedicated a significant portion of my time to web development, building real
     applications using Ruby on Rails, Django, PHP, MySQL, PostgreSQL, JavaScript, HTML/CSS, Shopify Liquid, and more.
-    I love programming because it perfectly combines creativity with logical problem-solving — the kind of work where I
+    I love programming because it perfectly combines creativity with logical problem-solving; the kind of work where I
     can lose track of time while building something useful. Developing a study app for my students was the moment it
     clicked for me: this is the field where I feel energized, challenged, and genuinely excited to grow. Every new project
     is an opportunity to learn something, refine my skills, and create solutions that make someone’s life easier.
@@ -33,7 +42,7 @@ layout: mylayout.njk
   <h2>Japan</h2>
   <p>I have lived and worked in Japan since 2006, beginning with the JET Program and later transitioning to roles in
     both public and private education before becoming a university lecturer. I hold an M.A. in TESOL, have co-authored
-    textbooks, published academic research, and designed curriculum at the university level — all of which has shaped me
+    textbooks, published academic research, and designed curriculum at the university level; all of which has shaped me
     into a clear communicator who understands how to break down complex ideas and collaborate effectively. I am fluent
     in professional Japanese communication, hold a Japanese driver’s license, and have extensive experience working in
     Japanese teams and organizations. These experiences, combined with my technical skills, allow me to bridge cultural
@@ -42,6 +51,29 @@ layout: mylayout.njk
 </div>
 
 <h2>Projects</h2>
+
+<div class="project-card">
+  <div class="project-card__header">
+    <a href="https://chapter-journals.com/"><h3>Chapter Journals</h3></a>
+  </div>
+  <div class="project-card__body">
+    <img src="images/Trueself.png" alt="A picture of a journal">
+    <div class="project-card__body__text">
+      <p>{{chapter_tagline}}</p>
+      <p class="details">{{chapter_details}}</p>
+    </div>
+    <div class="accordion">
+      <div class="accordion-header">
+        <svg class="caret-icon" width="24" height="24" viewBox="0 0 30 24" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="4 9 16 15 27 9" />
+        </svg>
+      </div>
+      <div class="accordion-content">
+        <p class="details-small">{{chapter_details}}</p>
+      </div>
+    </div>
+  </div>
+</div>
 
 <div class="project-card">
   <div class="project-card__header">
@@ -61,6 +93,30 @@ layout: mylayout.njk
       </div>
       <div class="accordion-content">
         <p class="details-small">{{story_time_details}}</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="project-card">
+  <div class="project-card__header">
+    <a href="https://over-the-rainbow.store/"><h3>Over the Rainbow</h3></a>
+  </div>
+  <div class="project-card__body">
+    <img src="images/over-the-rainbow.png" alt="A picture of part of the Over the Rainbow website">
+    <div class="project-card__body__text">
+      <p>{{over_the_rainbow_tagline}}</p>
+      <p class="details">{{over_the_rainbow_details}}</p>
+    </div>
+    <div class="accordion">
+      <div class="accordion-header">
+        <svg class="caret-icon" width="24" height="24" viewBox="0 0 30 24" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="4 9 16 15 27 9" />
+        </svg>
+      </div>
+      <div class="accordion-content">
+        <p class="details-small">{{over_the_rainbow_details}}</p>
       </div>
     </div>
   </div>
@@ -91,13 +147,13 @@ layout: mylayout.njk
 
 <div class="project-card">
   <div class="project-card__header">
-    <a href="https://chapter-journals.com/"><h3>Chapter Journals</h3></a>
+    <a href="https://alsaciuscipher.netlify.app/"><h3>Alsacius's Cipher</h3></a>
   </div>
   <div class="project-card__body">
-    <img src="images/Trueself.png" alt="A picture of a journal">
+    <img src="images/Alsacius-Cipher.png" alt="A picture of part of the website">
     <div class="project-card__body__text">
-      <p>{{chapter_tagline}}</p>
-      <p class="details">{{chapter_details}}</p>
+      <p>{{kellogg_cipher_tagline}}</p>
+      <p class="details">{{kellogg_cipher_details}}</p>
     </div>
     <div class="accordion">
       <div class="accordion-header">
@@ -106,30 +162,7 @@ layout: mylayout.njk
         </svg>
       </div>
       <div class="accordion-content">
-        <p class="details-small">{{chapter_details}}</p>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="project-card">
-  <div class="project-card__header">
-    <a href="https://github.com/Akakemushi/shinkouen"><h3>Shinkouen Teapots (github repo only)</h3></a>
-  </div>
-  <div class="project-card__body">
-    <img src="images/teapot24.jpg" alt="A picture of a teapot">
-    <div class="project-card__body__text">
-      <p>{{shinkouen_tagline}}</p>
-      <p class="details">{{shinkouen_details}}</p>
-    </div>
-    <div class="accordion">
-      <div class="accordion-header">
-        <svg class="caret-icon" width="24" height="24" viewBox="0 0 30 24" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
-        <polyline points="4 9 16 15 27 9" />
-        </svg>
-      </div>
-      <div class="accordion-content">
-        <p class="details-small">{{shinkouen_details}}</p>
+        <p class="details-small">{{kellogg_cipher_details}}</p>
       </div>
     </div>
   </div>
@@ -160,13 +193,13 @@ layout: mylayout.njk
 
 <div class="project-card">
   <div class="project-card__header">
-    <a href="https://alsaciuscipher.netlify.app/"><h3>Alsacius's Cipher</h3></a>
+    <a href="https://github.com/Akakemushi/shinkouen"><h3>Shinkouen Teapots (github repo only)</h3></a>
   </div>
   <div class="project-card__body">
-    <img src="images/Alsacius-Cipher.png" alt="A picture of part of the website">
+    <img src="images/teapot24.jpg" alt="A picture of a teapot">
     <div class="project-card__body__text">
-      <p>{{kellogg_cipher_tagline}}</p>
-      <p class="details">{{kellogg_cipher_details}}</p>
+      <p>{{shinkouen_tagline}}</p>
+      <p class="details">{{shinkouen_details}}</p>
     </div>
     <div class="accordion">
       <div class="accordion-header">
@@ -175,7 +208,7 @@ layout: mylayout.njk
         </svg>
       </div>
       <div class="accordion-content">
-        <p class="details-small">{{kellogg_cipher_details}}</p>
+        <p class="details-small">{{shinkouen_details}}</p>
       </div>
     </div>
   </div>
