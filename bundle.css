@@ -393,9 +393,11 @@ h2 {
 
   .colorful-text {
     background: linear-gradient(to right, var(--highlight-color), var(--general-text-color), var(--highlight-color));
+    background-size: 200%;
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
+    animation: shimmer 3s linear infinite;
   }
 
   .accordion {
