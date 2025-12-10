@@ -1,1 +1,4 @@
 - refine the about me sections, check for accuracy, get rid of em-dashes, lol.
+- add japanese sections as accordions underneath each text section
+- add caterpillar logo somewhere?
+- change color scheme to match the brand logo
