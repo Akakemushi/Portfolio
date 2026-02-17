@@ -23,6 +23,7 @@ kellogg_cipher_details:  This is a site that takes a message and outputs an encr
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/bundle.css">
     <script src="/accordion.js" defer></script>
+    <script src="/language.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="shortcut icon" type="image/x-icon" href="akakemushi-orange-48.ico">
@@ -30,6 +31,10 @@ kellogg_cipher_details:  This is a site that takes a message and outputs an encr
     <title>{{ word }}</title>
   </head>
   <body>
+    <div class="lang-switcher">
+      <button class="lang-btn active" data-lang="en">English</button>
+      <button class="lang-btn" data-lang="ja">日本語</button>
+    </div>
     {{ content | safe }}
     <div class="footer">
       <a class="social-icon" href="mailto:zergyjanus@gmail.com"><img src="./images/email-green.png" alt="Link to Email"></a>
